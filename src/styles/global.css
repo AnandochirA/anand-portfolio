@@ -1,0 +1,92 @@
+/* Green neon effect for subtitle and vertical line */
+.neon-green {
+  color: #4ade80;
+  text-shadow:
+    0 0 8px #4ade80,
+    0 0 16px #22c55e,
+    0 0 32px #22c55e;
+}
+.neon-border-green {
+  border-left-color: #4ade80 !important;
+  box-shadow:
+    0 0 8px #4ade80,
+    0 0 16px #22c55e,
+    0 0 32px #22c55e;
+}
+/* Purple neon effect for subtitle */
+.neon-purple {
+  color: #c084fc;
+  text-shadow:
+    0 0 8px #c084fc,
+    0 0 16px #a21caf,
+    0 0 32px #a21caf;
+}
+.neon-border-blue {
+  border-left-color: #38bdf8 !important;
+  box-shadow:
+    0 0 8px #38bdf8,
+    0 0 16px #0ea5e9,
+    0 0 32px #0ea5e9;
+}
+/* Use Merriweather font for about section bio */
+.font-\[Merriweather\,serif\] {
+  font-family: 'Merriweather', serif !important;
+}
+/* Fancy fade-in-up animation for hero subtitle */
+.animate-fade-in-up {
+  animation: fade-in-up 1.2s cubic-bezier(0.23, 1, 0.32, 1) both;
+}
+@keyframes fade-in-up {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* Fancy animated effect for coder sign */
+.fancy-coder-sign {
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  text-shadow:
+    0 0 8px #fff,
+    0 0 16px #f357a8,
+    0 0 32px #7b2ff2;
+}
+/* The following directives require Tailwind CSS and PostCSS setup */
+/* If you are not using Tailwind CSS, remove the following lines */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Animated gradient for navbar brand */
+.animate-gradient-x {
+  background-size: 200% 200%;
+  animation: gradient-x 3s ease-in-out infinite;
+}
+@keyframes gradient-x {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+.neon-link:hover {
+  text-shadow:
+    0 0 5px currentColor,
+    0 0 10px currentColor,
+    0 0 20px currentColor;
+}
+
+/* Fancy animated background for the whole site */
+body {
+  background: #f8fafc;
+  min-height: 100vh;
+}
